@@ -1,0 +1,59 @@
+<html>
+
+<head>
+
+<title>Cadastro de Pessoas</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="index.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="container mt-4">
+
+<h1 class="titulo">Cadastro de Pessoas</h1>
+
+<button class="btn btn-success mb-3 btn-novo" onclick="novo()">Novo Cadastro</button>
+
+<div id="formulario" class="card p-4 shadow mb-4">
+
+<h5 class="text-success">Cadastro</h5>
+
+<label>Nome</label>
+<input type="text" id="txtnome" class="form-control"/>
+
+<br/>
+
+<label>Telefone</label>
+<input type="text" id="txttelefone" class="form-control"/>
+
+<br/>
+
+<label>Email</label>
+<input type="text" id="txtemail" class="form-control"/>
+
+<br/>
+
+<div class="d-flex gap-2">
+
+<button class="btn btn-success btn-salvar" onclick="salvar()">Salvar</button>
+
+<button class="btn btn-outline-secondary btn-cancelar" onclick="cancelar()">Cancelar</button>
+
+</div>
+
+</div>
+
+<div id="conteudo"></div>
+
+<script src="index.js"></script>
+
+</body>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</html>

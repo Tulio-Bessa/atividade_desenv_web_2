@@ -1,0 +1,7 @@
+O SQL Injection é um tipo de ataque que acontece quando alguém mal-intencionado consegue inserir comandos SQL dentro dos campos de um sistema, como por exemplo em formulários de cadastro ou login. Isso acontece quando o sistema não trata corretamente os dados que o usuário digita e acaba misturando esses dados com comandos do banco de dados.
+
+Na prática, o invasor pode digitar algo que não é só informação comum, mas sim um comando SQL que altera o comportamento da consulta. Com isso, ele pode conseguir acessar dados que não deveria, modificar informações ou até apagar registros do banco.
+
+No meu projeto, eu evitei esse tipo de problema utilizando queries parametrizadas no Node.js. Em vez de montar a query juntando texto diretamente com os dados digitados pelo usuário, eu utilizei o símbolo de interrogação (?) como parâmetro e passei os valores separadamente.
+
+Dessa forma, o banco de dados entende que aqueles valores são apenas dados e não comandos, impedindo que qualquer código malicioso seja executado. Isso garante mais segurança para a aplicação e protege as informações armazenadas.
