@@ -1,0 +1,42 @@
+# Dependências
+node_modules/
+vendor/
+
+# Build / compilação
+dist/
+build/
+out/
+
+# Arquivos de ambiente
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# Arquivos temporários
+tmp/
+temp/
+*.tmp
+
+# Cache
+.cache/
+*.cache
+
+# Banco de dados local
+*.sqlite
+*.db
+
+# Arquivos de configuração sensíveis
+config.local.*
